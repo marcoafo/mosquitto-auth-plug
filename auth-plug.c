@@ -344,7 +344,7 @@ int mosquitto_auth_plugin_init(void **userdata, struct mosquitto_auth_opt *auth_
 				_fatal("%s init returns NULL", q);
 			}
 			(*bep)->kill =  be_memcached_destroy;
-			(*bep)->getuser =  be_memcached_getuser;
+			//(*bep)->getuser =  be_memcached_getuser;
 			(*bep)->superuser =  be_memcached_superuser;
 			(*bep)->aclcheck =  be_memcached_aclcheck;
 			found = 1;
